@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="FAQ-section"></div>
+  <div class="wrapper">
+    <h1 class="wrapper">FAQ's</h1>
+
+    <div class="faq">
+      <button class="accordion">
+        1) How to login?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>Kindly login by registering on the website with your email id and password.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        2) How do I contact the product owner?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>An email id will be provided, through which you can directly contact him/her.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        3) Is it necessary that the buyer has to be from RVCE?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>Certainly yes.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        4) What is the guarantee duration of your products?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>This has to be directly communicated with the seller; the website is not responsible for any sort of malfunctionality of the products.</p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        5) Is there any restriction for branch type and year?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>No, a student from any branch studying in any year is welcome to purchase.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    var currentlyOpen = null;
+  
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+  
+        var panel = this.nextElementSibling;
+  
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+          currentlyOpen = null;
+        } else {
+          // Close the currently open FAQ before opening the new one
+          if (currentlyOpen) {
+            currentlyOpen.classList.remove("active");
+            currentlyOpen.parentElement.classList.remove("active");
+            currentlyOpen.nextElementSibling.style.display = "none";
+          }
+  
+          panel.style.display = "block";
+          currentlyOpen = this;
+        }
+      });
+    }
+  </script>
+  
+{% endblock content %}

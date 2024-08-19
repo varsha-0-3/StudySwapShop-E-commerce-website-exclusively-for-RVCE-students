@@ -1,0 +1,219 @@
+body {
+  /* background-image: url("background.png"); */
+  background-repeat: repeat-x;
+  background-size: cover;
+  color: #0f1d35;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+  font-family: "Roboto", sans-serif;
+}
+
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+  }
+  
+  .bg-steel {
+    /* background-color: #5f788a; */
+    background-color: #20B2AA;
+  }
+  
+  .site-header .navbar-nav .nav-link {
+    color: #cbd5db;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+    color: #ffffff;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: 500;
+  }
+  
+  .content-section {
+    background: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #444444;
+  }
+  
+  a.article-title:hover {
+    color: #428bca;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #e3e3e3
+  }
+  
+  .article-metadata a:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .account-heading {
+    font-size: 2.5rem;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(134, 127, 127, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color:#20B2AA;
+    color: rgb(245, 242, 242);
+  } 
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .footer {
+    padding: 10px 0;
+    /* background-color: #343a40; Set your desired background color */
+    color: #ffffff; /* Set your desired text color */
+}
+
+.footer a {
+    color: #ffffff; /* Set your desired link color */
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.wrapper {
+  max-width: 50%;
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  margin-right: 100px;
+  margin-left: 140px;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  margin-left: 250px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/* .wrapper > h1 {
+  letter-spacing: 3px;
+} */
+
+.accordion {
+  background-color: #ffffff;
+  color: #333333;
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 150%;
+  padding: 2rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+  background-color: #e3f3ee;
+}
+
+.pannel {
+  width: 150%;
+  padding: 2rem;
+  background-color: #f3f2f9;
+  overflow: hidden;
+  display: none;
+  border: 1px solid #761919;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+
+.pannel p {
+  color: #2910b5d6;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.faq {
+  margin-bottom: 20px;
+}
+
+.faq.active {
+  border: none;
+}
+
